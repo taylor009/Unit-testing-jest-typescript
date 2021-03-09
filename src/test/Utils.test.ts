@@ -33,5 +33,18 @@ describe('Utils test suite', () => {
         expect(expectedQuery).toBe(expectedQuery);
     });
 
-    test.todo('test invalid URL');
+    test.only('test invalid URL with arrow function', () => {
+        expect(() => {
+            Utils.parseUrl('');
+        }).toThrowError('Empty url');
+    });
+
+    test.only('test invalid URL with try catch', () => {
+        try {
+            Utils.parseUrl('');
+        } catch(error) {
+            expect(error).toBeInstanceOf(Error);
+            expect(error).toHaveProperty('message', 'Empty url!');
+        }
+    })
 });

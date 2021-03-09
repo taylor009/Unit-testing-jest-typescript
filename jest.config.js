@@ -5,5 +5,7 @@ module.exports = {
     },
     testRegex: '(/__test__/.*|(\\.|/)(test|spec))\\.[jt]sx?$',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-    verbose: true
+    verbose: true,
+    collectCoverage: true,
+    collectionCoverageFrom: ['<rootDir>/src/app/**/*.ts'],
 }

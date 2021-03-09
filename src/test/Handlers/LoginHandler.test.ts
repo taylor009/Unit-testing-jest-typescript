@@ -1,6 +1,6 @@
 import { LoginHandler } from "../../app/Handlers/LoginHandler";
-import {HTTP_CODES, HTTP_METHODS, SessionToken} from "../../app/Models/ServerModels";
-import {Utils} from "../../app/Utils/Utils";
+import { HTTP_CODES, HTTP_METHODS, SessionToken } from "../../app/Models/ServerModels";
+import { Utils } from "../../app/Utils/Utils";
 
 
 describe('LoginHandler test suite', () => {

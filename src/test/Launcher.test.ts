@@ -5,7 +5,7 @@ import { Server } from "../app/Server/Server";
 jest.mock('../app/Server/Server', () => {
     return {
         Server: jest.fn(() => {
-            return{
+            return {
                 startServer: () => {
                     console.log('starting fake server')
                 }

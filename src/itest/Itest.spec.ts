@@ -36,7 +36,7 @@ describe('First itest suite', () => {
         }
         catch(error){
             expect(error).toBeInstanceOf(Error);
-            expect(error).toHaveProperty('message', 'SessionToken not deleted');
+            expect(error).toHaveProperty('message', 'SessionToken not deleted!');
         }
 
         const resultToken = await sessionTokenDBAccess.getToken(someSessionToken.tokenId);
